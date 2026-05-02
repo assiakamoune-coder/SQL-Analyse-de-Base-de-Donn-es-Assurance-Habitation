@@ -77,8 +77,8 @@ Le projet a permis de répondre à 12 problématiques métier.
 
 ### 🔗📦 Livrables
 
-- 📄 [Document technique](./Kamoune_Assia_1_document_technique_092025.pdf) : Détail des types de données et contraintes. 
-- 📄 [Méthodologie](./Kamoune_Assia_3_méthodologie_092025.pdf) : Étapes de réalisation et captures d'écran de la BDD chargée.
+- 📄 [Document technique](./document_technique.pdf) : Détail des types de données et contraintes. 
+- 📄 [Méthodologie](./methodologie.pdf) : Étapes de réalisation et captures d'écran de la BDD chargée.
 
 ---
 
