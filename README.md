@@ -57,31 +57,31 @@ Le projet s'appuie sur deux tables principales reliées par une clé commune :
 
 ### 🔗 Schéma relationnel
 
-```sql
+
 Contrat.Code_dep_code_commune = Region.Code_dep_code_commune
 
 ### 🔗📈 Analyses & résultats clés
 
 Le projet a permis de répondre à 12 problématiques métier.
 
-💰 1. Analyse de la tarification
+**💰 1. Analyse de la tarification**
 Cotisation moyenne : 19,33 €
 Top départements :
 Paris (75) : 36,4 €
 Hauts-de-Seine (92) : 26,24 €
 
-🏡 2. Statistiques immobilières
+**🏡 2. Statistiques immobilières**
 Surfaces maximales : jusqu'à 815 m²
 Répartition :
 22 720 contrats entre 0 et 25 000 €
 
-🗺️ 3. Distribution géographique
+**🗺️ 3. Distribution géographique**
 Île-de-France : 14 177 contrats
 Provence-Alpes-Côte d’Azur : 3 279 contrats
 
-### 🔗 📦 Livrables
+### 🔗📦 Livrables
 
-- 📄 [Document technique](Kamoune_Assia_1_document technique_092025.pdf) : Détail des types de données et contraintes. 
+- 📄 [Document technique](Kamoune_Assia_1_document_technique_092025.pdf) : Détail des types de données et contraintes. 
 - 📄 [Méthodologie](Kamoune_Assia_3_méthodologie_092025.pdf) : Étapes de réalisation et captures d'écran de la BDD chargée.
 
 ✅ Critères de validation
