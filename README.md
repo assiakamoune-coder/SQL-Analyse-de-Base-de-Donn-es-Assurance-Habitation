@@ -36,11 +36,13 @@ Volume par région : L'Île-de-France arrive en tête avec 14 177 contrats, suiv
 
 _Livrables inclus:_
 Le dépôt contient la documentation complète du projet :
-[Kamoune_Assia_1_document technique_092025.pdf] : Spécifications techniques et dictionnaire de données.  
-[Kamoune_Assia_3_méthodologie_092025.pdf] : Étapes de réalisation et captures d'écran de la base de données fonctionnelle.  
+| 📄 [Document technique](Kamoune_Assia_1_document_technique_092025.pdf) | Dictionnaire de données et spécifications |
+| 📄 [Méthodologie](Kamoune_Assia_3_methodologie_092025.pdf) | Étapes du projet et captures |
 
 Critères de validation:
 Le projet a été validé selon les critères suivants : 
 Base de données intègre (30 335 lignes dans Contrat, 38 916 dans Region).
 Absence d'erreurs SQL sur l'ensemble des requêtes.
 Schéma relationnel respectant les formes normales.
+
+
