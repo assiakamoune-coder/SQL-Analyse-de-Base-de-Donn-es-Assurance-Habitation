@@ -60,7 +60,7 @@ Le projet s'appuie sur deux tables principales reliées par une clé commune :
 ```sql
 Contrat.Code_dep_code_commune = Region.Code_dep_code_commune
 
-📈 Analyses & résultats clés
+### 🔗📈 Analyses & résultats clés
 
 Le projet a permis de répondre à 12 problématiques métier.
 
@@ -79,7 +79,7 @@ Répartition :
 Île-de-France : 14 177 contrats
 Provence-Alpes-Côte d’Azur : 3 279 contrats
 
-📦 Livrables
+### 🔗 📦 Livrables
 
 - 📄 [Document technique](Kamoune_Assia_1_document technique_092025.pdf) : Détail des types de données et contraintes. 
 - 📄 [Méthodologie](Kamoune_Assia_3_méthodologie_092025.pdf) : Étapes de réalisation et captures d'écran de la BDD chargée.
