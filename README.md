@@ -1,48 +1,96 @@
-# SQL-Analyse-de-Base-de-Donn-es-Assurance-Habitation
-Ce projet porte sur la conception, l'intégration et l'analyse d'une base de données relationnelle pour un système d'assurance habitation. L'objectif est de transformer des données brutes (fichiers CSV) en une base de données fonctionnelle pour répondre à des problématiques métier (tarification, géographie, statistiques immobilières).
+# 🏠 SQL – Analyse de Base de Données Assurance Habitation
 
-_Présentation du projet:_
-Ce projet consiste en la conception et l'exploitation d'une base de données relationnelle pour une compagnie d'assurance habitation. 
-L'objectif est de centraliser les informations des contrats et les données géographiques afin d'en extraire des indicateurs clés de performance (KPI) et des analyses territoriales.  
+## 📌 Description
+Ce projet porte sur la conception, l'intégration et l'analyse d'une base de données relationnelle pour un système d'assurance habitation.
 
-_Compétences techniques démontrées:_
-Modélisation de données : Création d'un dictionnaire de données et d'un schéma relationnel normalisé.  
-SGBD Relatinnel : Implémentation sous SQLite 3.  
-Data Loading : Importation et vérification de jeux de données volumineux (> 69 000 lignes cumulées).  
-SQL Avancé : Rédaction de requêtes complexes avec jointures, agrégations (GROUP BY), filtrages (HAVING) et fonctions de fenêtrage.  
+L'objectif est de transformer des données brutes (fichiers CSV) en une base de données fonctionnelle pour répondre à des problématiques métier :
+- tarification  
+- géographie  
+- statistiques immobilières  
 
-_Structure des Données:Dictionnaire des Données:_
+---
+
+## 🎯 Présentation du projet
+Ce projet consiste en la conception et l'exploitation d'une base de données relationnelle pour une compagnie d'assurance habitation.
+
+L'objectif est de :
+- centraliser les informations des contrats  
+- exploiter les données géographiques  
+- extraire des indicateurs clés de performance (**KPI**)  
+- réaliser des analyses territoriales  
+
+---
+
+## 🛠️ Compétences techniques démontrées
+
+- **Modélisation de données**
+  - Création d'un dictionnaire de données  
+  - Schéma relationnel normalisé  
+
+- **SGBD relationnel**
+  - Implémentation sous **SQLite 3**  
+
+- **Data Loading**
+  - Importation et vérification de jeux de données volumineux (> 69 000 lignes)  
+
+- **SQL avancé**
+  - Jointures (**JOIN**)  
+  - Agrégations (**GROUP BY**)  
+  - Filtrages (**HAVING**)  
+  - Fonctions de fenêtrage  
+
+---
+
+## 🧱 Structure des données
+
+### 📊 Dictionnaire des données
+
 Le projet s'appuie sur deux tables principales reliées par une clé commune :
-Table Contrat : Contient 14 colonnes (ID, adresse, surface, type de local, formule, prix mensuel, etc.).  
-Table Region : Contient 8 colonnes (Code région, nom, académie, département, etc.).  
 
-_Schéma Relationnel:_
-La relation est établie via la clé étrangère :
-Contrat.Code_dep_code_commune ↔️ Region.Code_dep_code_commune.  
+- **Table Contrat**
+  - 14 colonnes (ID, adresse, surface, type de local, formule, prix mensuel, etc.)
 
-_Analyses & Résultats Clés:_
-Le projet a permis de répondre à 12 problématiques métier. Voici quelques extraits : 
+- **Table Region**
+  - 8 colonnes (code région, nom, académie, département, etc.)
 
-_1. Analyse de la tarification:_
-Cotisation moyenne : Le prix moyen d'une cotisation mensuelle est de 19,33 €.
-Top départements : Paris (75) et les Hauts-de-Seine (92) sont les départements affichant les cotisations les plus élevées (respectivement 36,4 € et 26,24 € en moyenne).
+---
 
-_2. Statistiques Immobilières_
-Surfaces maximales : Identification des contrats avec les plus grandes surfaces (jusqu'à 815 m²).
-Répartition par valeur : La majorité des contrats (22 720) concernent des biens d'une valeur comprise entre 0 et 25 000 €.
+### 🔗 Schéma relationnel
 
-_3. Distribution Géographique:_
-Volume par région : L'Île-de-France arrive en tête avec 14 177 contrats, suivie par la région Provence-Alpes-Côte d'Azur (3 279).
+```sql
+Contrat.Code_dep_code_commune = Region.Code_dep_code_commune
 
-_Livrables inclus:_
-Le dépôt contient la documentation complète du projet :
-| 📄 [Document technique](Kamoune_Assia_1_document_technique_092025.pdf) | Dictionnaire de données et spécifications |
-| 📄 [Méthodologie](Kamoune_Assia_3_methodologie_092025.pdf) | Étapes du projet et captures |
+📈 Analyses & résultats clés
 
-Critères de validation:
-Le projet a été validé selon les critères suivants : 
-Base de données intègre (30 335 lignes dans Contrat, 38 916 dans Region).
-Absence d'erreurs SQL sur l'ensemble des requêtes.
-Schéma relationnel respectant les formes normales.
+Le projet a permis de répondre à 12 problématiques métier.
 
+💰 1. Analyse de la tarification
+Cotisation moyenne : 19,33 €
+Top départements :
+Paris (75) : 36,4 €
+Hauts-de-Seine (92) : 26,24 €
+
+🏡 2. Statistiques immobilières
+Surfaces maximales : jusqu'à 815 m²
+Répartition :
+22 720 contrats entre 0 et 25 000 €
+
+🗺️ 3. Distribution géographique
+Île-de-France : 14 177 contrats
+Provence-Alpes-Côte d’Azur : 3 279 contrats
+
+📦 Livrables
+
+- 📄 [Document technique](Kamoune_Assia_1_document technique_092025.pdf) : Détail des types de données et contraintes. 
+- 📄 [Méthodologie](Kamoune_Assia_3_méthodologie_092025.pdf) : Étapes de réalisation et captures d'écran de la BDD chargée.
+
+✅ Critères de validation
+
+Le projet a été validé selon les critères suivants :
+
+✔️ Base de données intègre
+30 335 lignes dans Contrat
+38 916 lignes dans Region
+✔️ Absence d'erreurs SQL
+✔️ Schéma relationnel respectant les formes normales
 
